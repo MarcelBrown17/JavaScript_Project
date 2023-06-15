@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Raleway&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+  body{
+      display: grid;
+      text-align: center;
+    font-family: 'Lato', sans-serif !important;
+    font-family: 'Raleway', sans-serif !important;
+    background-color: #c6c6c6 !important;
+  }
+  
+
+
+ 
+  .row > button {
+    width: fit-content;
+}
+#sorting{
+    background-color: #0096C7;
+}
+#add{
+    background-color: #0096C7;
+}
+#addProducts{
+    background-color: #0096C7;
+}
+#addbook{
+    background-color: #0096C7;
+}
+#close{
+    background-color: #0096C7;
+}
+
+#pic{
+  width: 10rem;
+}
+
+.amount-due {
+  background-color: var(--alternativeColor);
+}
