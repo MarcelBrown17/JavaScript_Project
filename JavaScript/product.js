@@ -3,7 +3,11 @@ const cartItemsEl = document.querySelector(".cart-items");
 const subtotalEl = document.querySelector(".subtotal");
 const totalItemsInCartEl = document.querySelector(".total-items-in-cart");
 
-const products = [
+
+ 
+let  products = JSON.parse(localStorage.getItem("products")) ?
+JSON.parse(localStorage.getItem("products")) :
+localStorage.setItem("products",JSON.stringify([
     {
       id: 0,
       name: "FREE WIFI EMO 8.25.",
@@ -40,7 +44,6 @@ const products = [
       instock: 5,
       description:
         "Standard popsicle shape.",
-
         category:"Skateboard",
       imgSrc: "https://i.postimg.cc/x1vnpRnx/153376-0-Element-x-Star-Wars-Millenium-Falcon8.webp",
     },
@@ -64,8 +67,9 @@ const products = [
         category:"Longboard",
       imgSrc: "https://i.postimg.cc/XJzbB1kJ/143996-0-Globe-The-All-Time35875905cm.webp",
     },
-  ];
-  
+   
+]
+)); 
 
 
 //PRODUCTS
